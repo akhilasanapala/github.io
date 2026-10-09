@@ -1,47 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        
-        <div class="logo">Elevate Labs</div>
 
-        <nav>
-            <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Programs</a>
-        <a href="#">Internships</a>
-        <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
-    <div class="hero-content">
-        <h1>Empowering Students to Build Their Future</h1>
+    <div class="todo-container">
+        <h1>My To-Do List 📝</h1>
+        <h1 class="create-task-heading">
+                        Create <span class="create-task-heading-subpart">Task</span>
+        </h1>
 
-        <p>
-            Elevate Labs helps students and freshers develop practical
-            skills through hands-on learning, internships, and real-world
-            projects, preparing them for successful careers in the
-            technology industry.
-        </p>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addButton">Add Task</button>
+        </div>
+        <h1 class="todo-items-heading">
+                        My <span class="todo-items-heading-subpart">Tasks</span>
+        </h1>
 
-        <button>Explore Opportunities</button>
+        <ul id="taskList"></ul>
     </div>
-</section>
-<footer>
-    <p>© 2026 Elevate Labs. All Rights Reserved.</p>
 
-    <div class="social-links">
-        <a href="#">Naukri</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-    </div>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
