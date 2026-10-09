@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #222;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url("https://assets.ccbp.in/frontend/responsive-website/landing-section-bg.png");
+    background-size: cover;
+    height:80vh;
+    color:#ffffff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #FFDDA9;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+.button {
+    background-color: #FFDDA9;
+
+}
